@@ -96,8 +96,9 @@ export default function Todo() {
                     classes={context.classes} />
                 <List className={classes.root}>
                     {tasks.map(task =>
-                        <TodoItem key={task.id} task={task}
+                        <TodoItem key={task.id} task={task} tasks={tasks}
                             onRemoveTask={onRemoveTask}
+                            setTasks={setTasks}
                             classes={classes} />
                     )}
                 </List>
