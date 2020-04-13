@@ -99,7 +99,7 @@ export default function Todo() {
                         <TodoItem key={task.id} task={task} tasks={tasks}
                             onRemoveTask={onRemoveTask}
                             setTasks={setTasks}
-                            classes={classes} />
+                        />
                     )}
                 </List>
             </Container>
